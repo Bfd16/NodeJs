@@ -1,0 +1,45 @@
+<div class="container">
+
+<table class="table table-hover">
+
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>isim</th>
+            <th>soyisim</th>
+            <th>email</th>
+            <th>kullaniciadi</th>
+            <th>dogum tarihi</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        
+        <%for(var i=0; i<kullanicilar.length;i++){%>
+        
+            
+                
+            <tr class="info">
+            
+                <th><%=i+1%></th>
+                <th><%=kullanicilar[i].ad%></th>
+                <th><%=kullanicilar[i].soyad%></th>
+                <th><%=kullanicilar[i].email%></th>
+                <th><%=kullanicilar[i].kullaniciAdi%></th>
+                <th><%=kullanicilar[i].dogumtarihi%></th>
+                <th><a href="/login/kullaniciSil/<%=kullanicilar[i].kullaniciAdi%>">sil</a></th>
+            </tr>
+        <%}%>
+        
+        
+       
+
+
+    </tbody>
+
+</table>
+
+
+
+
+</div>
