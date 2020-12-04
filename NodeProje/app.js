@@ -27,4 +27,4 @@ var Kullanici = require('./app_server/models/kullanici');
 
 
 
-app.listen(8000);
+app.listen(8080);
